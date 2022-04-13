@@ -12,8 +12,8 @@ for i = 1 : 20
     b = rand(n, 1);
     x0 = rand(n, 1);
 
-    [x_ja, iters_ja] = Jacobi(A, x0, b, 1e-6, 1000);
-    [x_gs, iters_gs] = GaussSeidel(A, x0, b, 1e-6, 1000);
+    [x_ja, iters_ja] = Jacobi(A, x0, b, 2, 1e-6, 1000);
+    [x_gs, iters_gs] = GaussSeidel(A, x0, b, 2, 1e-6, 1000);
 
     x_true = A\b;
 
